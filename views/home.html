@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8"> <!-- indica la codificación de caracteres utilizada -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- asegurará que el navegador, muestre tu layout correctamente a una escala de 1:1. Ningún zoom será aplicado -->
-    <title>ML</title> <!-- titulo que se muestra en la ventana del navegador -->
+    <title>Mercado Liebre</title> <!-- titulo que se muestra en la ventana del navegador -->
     <link rel="stylesheet" href="css/style.css"> <!-- incluimos css -->
     <link rel="stylesheet" href="css/whatsapp.css"> <!-- incluimos css-->
+    <link rel="icon" href="images/logo_ml.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" /> <!-- incluimos css -->
 </head>
 <body>
-    <!-- poner nuestro h1 -->
     <header>
         <div class="container-logo-search-bar">
           <div class="flex-grow-50"><img src="images/logo-mercado-liebre.svg" alt="ml logo"></div>
           <div class="container-search-bar">
-            <form class="nav-search" action="https://www.mercadolibre.com.ar/jm/search" method="GET" role="search" style="overflow: inherit; display: inherit;">
-              <input type="text" placeholder="Buscar productos, marcas y más…">
+            <form class="nav-search"  method="GET">
+              <input type="text" placeholder="Buscar productos, marcas y más…" class="noBorderI">
               <button type="submit" class="nav-search-btn" tabindex="3">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
@@ -37,10 +37,10 @@
             </ul>
         </nav>
         <div class="burger-menu">
-            <i class="background-blue color-white border-radius-15 padding-10 fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars"></i>
         </div>
     </header>
-
+     <img class="banner" src="/images/img-home-banner.jpg" alt="banner">
     <main>
         <h2>Basado en tu ultima visita:</h2>
         <section class="section-1">
@@ -89,33 +89,7 @@
                 <div class="img description"><h5>SmartTv Samsung 43"</h5></div>
             </article>
         </section>
-        <!-- <section class="section-2">
-            <h2>Ofertas:</h2>
-            <article>
-                <div class="img"><img src="images/img-cafetera-moulinex.jpg" alt="imagen de la cafetera"></div>
-                <h6>$6.770</h6>
-                <h5>40% off</h5>
-                <h5>Cafetera Moulinex</h5>
-            </article>
-            <article>
-                <div class="img"><img src="images/img-macbook-pro-2019.jpg" alt="imagen de MacBook"></div>
-                $230.000
-                20% off
-                MacBook Pro 2019
-            </article>
-            <article>
-                <div class="img"><img src="images/img-samsung-galaxy-s10.jpg" alt="imagen Samsung"> </div>
-                $70.500
-                10% off
-                Samsung Galaxy S10
-            </article>
-            <article>
-                <div class="img"><img src="images/img-tv-samsung-smart.jpg" alt="imagen SmarTv"> </div>
-                $23.200
-                5% off
-                SmartTv Samsung 43"
-            </article>
-        </section> -->
+       
     </main>
 
     <section>

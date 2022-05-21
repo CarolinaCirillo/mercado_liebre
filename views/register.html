@@ -4,99 +4,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarme</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <form action="homelogin" method="post" id="register" name="register">
-    <label for="name">
-        Nombre y apellido
-        <input type="text" name="name" id="name" placeholder="Ejm. Jose"  maxlength="10" required/>
-    </label>
-    <label for="username">
-        Nombre de usuario
-        <input
-        type="text"
-        name="username"
-        id="username"
-        placeholder="Ingrese su nombre de usuario"
-        />
-    </label>
-    <label for="create_at"
-        >Fecha de nacimiento
+   
+    <main class="register">
+       <h2>Registrate</h2>
+      <form action="homelogin" class="formregister" method="post" id="register" name="register">
+    <div class="inputstyle">
+      <label for="name">
+        <input type="text" name="name" id="name" placeholder="Ingrese su nombre y apellido"  maxlength="10" required/>
+      </label>
+    </div>
+    <div class="inputstyle">
+      <label for="username" >
+        <input type="text" name="username" id="username" placeholder="Ingrese su nombre de usuario"/>
+      </label>
+    </div>
+    <div class="inputstyle">
+      <label for="create_at" >
+          <p>Fecha de nacimiento</p>
         <input type="date" name="create_at" id="create_at" />
-    </label>
-    <label for="address"
-        >Domicilio
-        <input
-        type="text"
-        name="address"
-        id="address"
-        placeholder="Calle 100 # 12"
-        />
-    </label>
-    <label for="">
-        Perfil
-        <input
-        type="radio"
-        name="perfil"
-        value="comprador"
-        id="perfil"
-        />Comprador
-        <input
-        type="radio"
-        name="perfil"
-        value="vendedor"
-        id="perfil"
-        />Vendedor
-    </label>
-    <label for="">
-        Catagoria
-        <input
-        type="checkbox"
-        name="category"
-        value="electro"
-        id="category"
-        />Electro
+      </label>
+    </div>
+    <div class="inputstyle">
+      <label for="address">
+        <input type="text" name="address" id="address" placeholder="Domicilio please"/>
+      </label>
+    </div>
+    <div class="inputstyle">
+      <label for="perfil">Perfil
+        <input type="radio" name="perfil" value="comprador" id="perfil"/>Comprador
+        <input type="radio" name="perfil" value="vendedor" id="perfil"/>Vendedor
+      </label>
+    </div>
+    <div>
+      <label for="category" class="inputstyle">Catagoría
+        <input type="checkbox" name="category" value="electro" id="category"/>Electro
         <input type="checkbox" name="category" value="moda" id="category" />Moda
-        <input
-        type="checkbox"
-        name="category"
-        value="hogar"
-        id="category"
-        />Hogar
-        <input
-        type="checkbox"
-        name="category"
-        value="juguetería"
-        id="category"
-        />Juguetería
-        <input type="checkbox" name="category" value="vida" id="category" />Vida
-        Sana
-    </label>
-    <label for="imguser"
-        >Foto de Usuario
+        <input type="checkbox" name="category" value="hogar" id="category" />Hogar
+        <input type="checkbox" name="category" value="juguetería" id="category"/>Juguetería
+        <input type="checkbox" name="category" value="vida" id="category" />Vida Sana
+      </label>
+    </div>
+    <div>
+      <label for="imguser" class="inputstyle">Foto de Usuario
         <input type="file" name="imguser" accept="image/*" id="imguser" />
-    </label>
-    <label for="password"
-        >Contraseña
-        <input
-        type="password"
-        id="password"
-        name="password"
-        placeholder="Contraseña"
-        />
-    </label>
-    <label for="passwordConf"
-        >Confirmar Contraseña
-        <input
-        type="password"
-        id="passwordConf"
-        name="passwordConf"
-        placeholder="Contraseña"
-        />
-    </label>
-    <input type="submit" value="submit" />
-    <input type="reset" form="register" >
+      </label>
+    </div>
+    <div class="inputstyle">
+      <label for="password">
+        <input type="password" id="password" name="password" placeholder="Contraseña"/>
+      </label>
+    </div>
+    <div class="inputstyle">
+      <label for="passwordConf">
+        <input type="password" id="passwordConf" name="passwordConf" placeholder="Confirme contraseña"/>
+      </label>
+    </div>
+    <div>
+      <input type="submit" value="submit" />
+      <input type="reset" form="register" >
+    </div>
     </form>
+   </main>
+   <footer>
+     <div>
+        <i class="fa-solid fa-credit-card"></i>
+        <h4>Pagá con tarjeta o en efectivo</h4>
+        <p>
+            Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+            puntos de pago. ¡Y siempre es seguro!
+        </p>
+    </div>
+    <div>
+        <i class="fa-solid fa-gift"></i>
+        <h4>Envío gratis desde $ 2.500</h4>
+        <p>
+            Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+            productos. Es un beneficio de Mercado Puntos.
+        </p>
+    </div>
+    <div>
+        <i class="fa-solid fa-user-shield"></i>
+        <h4>Seguridad, de principio a fin</h4>
+        <p>
+            ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+            porque estás siempre protegid@.
+        </p>
+    </div>
+    <div>
+        <h5>© 1999-2020 MercadoLiebre S.R.L.</h5>
+    </div>
+  </footer>
 
 </body>
 </html>

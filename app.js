@@ -54,7 +54,7 @@ app.get(httpPosition, (req, res) => {
 })
 
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 3000,function () {
     console.log(`App listening at http://localhost:${port}`)
     console.log(__dirname)
 })
